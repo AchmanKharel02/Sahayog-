@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "SAHAYOG",
+    "slug": "sahayog",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icons/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/icons/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#4C8BF5"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sahayog.mobile"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icons/adaptive-icon.png",
+        "backgroundColor": "#4C8BF5"
+      },
+      "package": "com.sahayog.mobile",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/icons/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Inter-Regular.otf",
+            "./assets/fonts/Inter-Medium.otf",
+            "./assets/fonts/Inter-Bold.otf"
+          ]
+        }
+      ],
+      "expo-camera"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "sahayog-mobile"
+      }
+    }
+  }
+}
