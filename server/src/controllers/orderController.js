@@ -81,7 +81,7 @@ const createOrder = async (req, res) => {
 
     // Send notifications
     await Notification.createNotification({
-      recipient: buyerId,
+      recipient: order.buyer,
       title: 'Order Placed Successfully!',
       message: `Your order "${order.trackingCode}" has been placed. We'll notify you when the seller accepts it.`,
       type: 'order',
