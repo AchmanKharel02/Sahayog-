@@ -11,7 +11,8 @@ const {
   searchServices
 } = require('../controllers/serviceController');
 const { authenticate, isSeller, checkOwnership } = require('../middleware/auth');
-const { uploadMultiple, validateServiceCreation } = require('../middleware/validation');
+const { uploadMultiple } = require('../services/fileService');
+const { validateServiceCreation } = require('../middleware/validation');
 
 // Public routes
 router.get('/', getAllServices);
