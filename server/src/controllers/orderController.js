@@ -111,7 +111,7 @@ const createOrder = async (req, res) => {
         orderId: order._id,
         trackingCode: order.trackingCode,
         serviceTitle: serviceData.title,
-        buyerName: (await User.findById(buyerId)).fullName
+        buyerName: (await User.findById(order.buyer)).fullName
       });
     }
 
